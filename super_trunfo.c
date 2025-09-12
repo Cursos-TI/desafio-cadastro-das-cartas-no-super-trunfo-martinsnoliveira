@@ -31,17 +31,17 @@ int main() {
     printf(" \n");
 
     printf("Digite o Código do Estado (uma letra de 'A' a 'H'): ");
-    scanf("%c", &Estado1);
+    scanf(" %c", &Estado1);
     printf("Você digitou a letra %c \n", Estado1);
     printf(" \n");
 
     printf("Digite o código da carta, sendo a letra do Estado + uma sequencia de 01 a 04: ");
-    scanf("%s", &cod_carta1);
+    scanf("%s", cod_carta1);
     printf("Você digitou o código %s para a CARTA  1.\n", cod_carta1);
     printf(" \n");
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nome_cidade1);
+    scanf(" %30[^\n]", nome_cidade1);
     printf("A cidade que você digitou foi %s\n", nome_cidade1);
     printf(" \n");
 
@@ -69,17 +69,17 @@ int main() {
     printf(" \n");
 
     printf("Digite o Código do Estado (uma letra de 'A' a 'H'):");
-    scanf("%c", &Estado2);
+    scanf(" %c", &Estado2);
     printf("Você digitou a letra %c \n", Estado2);
     printf(" \n");
 
     printf("Digite o código da carta, sendo a letra do Estado + uma sequencia de 01 a 04: ");
-    scanf("%s", &cod_carta2);
+    scanf("%s", cod_carta2);
     printf("Você digitou o código %s para a CARTA  2.\n", cod_carta2);
     printf(" \n");
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nome_cidade2);
+    scanf(" %30[^\n]", nome_cidade2);
     printf("A cidade que você digitou foi %s\n", nome_cidade2);
     printf(" \n");
 
