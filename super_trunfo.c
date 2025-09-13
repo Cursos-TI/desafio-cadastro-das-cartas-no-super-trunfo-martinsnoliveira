@@ -80,8 +80,9 @@ int main() {
     printf("PIB per capta de %.2f US$/hab\n", pibpcapita1);
     printf("Super poder %.5f\n", superpoder1);
 
+    printf("   \n");
     printf("Agora, entraremos com os dados da CARTA 2\n");
-    printf(" \n");
+    printf("   \n");
 
     printf("Digite o Código do Estado (uma letra de 'A' a 'H'):");
     scanf(" %c", &Estado2);
@@ -168,9 +169,8 @@ int main() {
     Comparação das Cartas
     */
     printf("*** COMPARAÇAO DAS CARTAS ***\n");
+    printf("*** Atributo: SUPER PODER ***\n");
     printf("===============================\n");
-    printf("Para cada resultado (1), vence a CARTA1\n");
-    printf("Para cada resultado (0), vence a CARTA2\n");
     printf("   \n");
 
     int result_populacao = populacao1 > populacao2;
@@ -181,6 +181,13 @@ int main() {
     int result_pibpercapita = pibpcapita1 > pibpcapita2;
     int result_superpoder = superpoder1 > superpoder2;
 
+    if (result_superpoder = 1) {
+        printf("A CARTA 1 VENCEU COM UMA POPULAÇÃO DE %.2f.\n", superpoder1);
+    } else {
+        printf("A CARTA 2 VENCEU COM UMA POPULAÇÃO DE %.2f.\n", superpoder2);
+    }
+
+    /*
     printf("População: (%d)\n", result_populacao);
     printf("Área: (%d)\n", result_area);
     printf("PIB: (%d)\n", result_PIB);
@@ -188,9 +195,11 @@ int main() {
     printf("Densidade populacional: (%d)\n", result_dens_pop);
     printf("PIB per capita (%d)\n", result_pibpercapita);
     printf("Super Poder: (%d)\n", result_superpoder);
-    printf("   \n")/
+    printf("   \n");
+    */
     printf("*** FIM DA RODADA ***\n");
 
     return 0;
 
 }
+
